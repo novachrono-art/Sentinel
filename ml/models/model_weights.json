@@ -1,0 +1,34 @@
+{
+  "model_type": "LogisticRegression",
+  "model_version": "v1.0-deterministic",
+  "features": [
+    "amount_scaled",
+    "order_history_scaled",
+    "dispute_count_scaled",
+    "velocity_score",
+    "disposable_email",
+    "error_severity",
+    "retry_ratio",
+    "lifetime_spend_scaled"
+  ],
+  "coefficients": [
+    6.830594253283557,
+    -10.544417212175842,
+    13.251152321269053,
+    11.860656958813482,
+    9.4560775540043,
+    12.06225305462264,
+    7.449566127661205,
+    -7.264426451399633
+  ],
+  "intercept": -6.285559052884232,
+  "metrics": {
+    "roc_auc": 0.9980616201810711,
+    "test_samples": 2000
+  },
+  "thresholds": {
+    "low_risk_ceiling": 0.35,
+    "medium_risk_ceiling": 0.7,
+    "high_risk_floor": 0.7
+  }
+}
